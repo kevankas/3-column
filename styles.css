@@ -9,22 +9,111 @@
 
 .sectionone, .sectiontwo, .sectionthree
 {
-    width: 300px;
-    height: 600px;
+    width: 260px;
+    height: 460px;
 }
-.container
-{
-    display:flex;
-}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /*Add this line to vertically center the content */
+    height: 95vh; 
+    /*Set the height of the container to 100vh to ensure it takes the full viewport height*/
+  }
 .sectionone
 {
     background-color: var(--borange);
+    border-radius: 10px 0px 0px 10px;
 }
 .sectiontwo
 {
     background-color: var(--dcyan);
 }
+
 .sectionthree
 {
     background-color: var(--vdcyan);
+    border-radius: 0px 10px 10px 0px;
+}
+.bodyy
+{
+    font-size:15px;
+    color:var(--twhite);
+    width: 175px;
+    /* padding-left: 50px; */
+    font-family: 'Lexend Deca', sans-serif;
+   
+}
+.containerthree, .containertwo, .containerone
+{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding-left: 50px;
+}
+.headerone, .headertwo, .headerthree
+{
+    font-size: 30px;
+    color:var(--vlgray);
+    font-family: 'Big Shoulders Display', arial;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+button
+{
+    background-color: var(--vlgray);
+    border: 0;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 15px;
+    
+
+}
+.btn
+{
+    margin-top: 10px;
+}
+.picture
+{
+    padding-top: 40px;
+}
+/* .btn:hover
+{
+        opacity: 0.85;
+} */
+.buttonone
+{
+    color:var(--borange);
+}
+.buttontwo
+{
+    color:var(--dcyan);
+}
+.buttonthree
+{
+    color:var(--vdcyan);
+}
+.buttonone:active
+{
+    background-color:var(--borange);
+    border: 2px white solid;
+    border-radius: 25px !important;
+    color:white;
+}
+.buttontwo:active
+{
+    background-color:var(--dcyan);
+    border: 2px white solid;
+    border-radius: 25px !important;
+    color:white;
+}
+.buttonthree:active
+{
+    background-color:var(--vdcyan);
+    border: 2px white solid;
+    border-radius: 25px !important;
+    color:white;
 }
